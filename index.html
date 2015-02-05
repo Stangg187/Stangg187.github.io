@@ -1,106 +1,71 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portfolio</title>
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet'>
-	<script src="js/jquery-2.1.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/custom.js"></script>
-	<link rel="stylesheet" href="css/bootstrap.css"> 
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<div class="container">
-		<div class="row" id="headerRow">
-			<div class="col-md-2">
-			<img class="title-logo img-responsive" src="images/logo.png" alt="Udacity Logo">
-		</div>
-			<div class="col-md-10 text-right text-uppercase">
-				<h1 class="title-super text-thin">Anthony Fawkes</h1>
-				<h4>Front-End Ninja</h4>
-			</div>
-		</div>
-		<hr>
-		<div class="row" id="mainImage">
-			<div class="col-md-12">
-				<img src="images/main.jpg" class="img-responsive" alt="Responsive image">
-			</div>
-		</div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" FILL ME IN ">
+    <meta name="author" content=" FILL ME IN ">
+    <title>Cameron Pittman: Portfolio</title>
 
-		<div class="row" id="workLinks">
-			<div class="col-md-12">
-				<h2 class="text-muted">Featured Work</h2>
-			</div>
-			<div class="col-md-4 text-center">
-				<img src="images/project1.jpg" class="img-responsive hover-image" data-toggle="modal" data-target="#project1" alt="Responsive image">
-				<h3>APPIFY</h3>
-				<a href="https://github.com/udacity/Appify/">https://github.com/udacity/Appify/</a>
-			</div>	
-			<div class="col-md-4 text-center">
-				<img src="images/project2.jpg" class="img-responsive hover-image" data-toggle="modal" data-target="#project2" alt="Responsive image">
-				<h3>SUNFLOWER</h3>
-				<a href="https://github.com/udacity/Sunflower/">https://github.com/udacity/Sunflower/</a>
-			</div>
-			<div class="col-md-4 text-center">
-				<img src="images/project3.jpg" class="img-responsive hover-image" data-toggle="modal" data-target="#project3" alt="Responsive image">
-				<h3>BOKEH</h3>
-				<a href="https://github.com/udacity/Bokey/">https://github.com/udacity/Bokey/</a>
-			</div>
+    <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
-		</div>
-	</div>
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/print.min.css" rel="stylesheet">
 
-	<!-- Modal -->
-	<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
-	      </div>
-	      <div class="modal-body">
-	        <img class="img-responsive" src="images/project1.jpg" alt="Modal Responsive Image">
-	        This was my first project in this class. I learned a lot about HTML and CSS.
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h4 class="modal-title" id="myModalLabel2">Favorite App Page</h4>
-	      </div>
-	      <div class="modal-body">
-	        <img class="img-responsive" src="images/project2.jpg" alt="Modal Responsive Image">
-	        This was my second project in this class. I learned a lot about javascript.
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h4 class="modal-title" id="myModalLabel3">Favorite App Page</h4>
-	      </div>
-	      <div class="modal-body">
-	        <img class="img-responsive" src="images/project3.jpg" alt="Modal Responsive Image">
-	        This was my third project in this class. I learned a lot about spelling javascript correctly.
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	      </div>
-	    </div>
-	  </div>
-</div>
-</body>
+    <script>
+      (function(w,g){w['GoogleAnalyticsObject']=g;
+      w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
+
+      // TODO: replace with your Google Analytics profile ID.
+      ga('create', 'UA-XXXX-Y');
+      ga('send', 'pageview');
+    </script>
+    <script src="http://www.google-analytics.com/analytics.js"></script>
+    <script async src="js/perfmatters.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="/"><img src="img/profilepic.jpg"></a>
+      <p>Cameron Pittman<br><span>Course Developer</span></p>
+    </header>
+
+    <div class="container">
+      <div class="hero">
+        <strong>I love web development!</strong> This is a template for a simple portfolio. I decided to use it to showcase a few Udacity courses I've taken and some teaching work, but you can use it to showcase any kind of project that you want the world to see :) <br> Contact me: me@email.com
+      </div>
+
+      <div class="content">
+        <ul>
+          <li>
+            <img src="https://lh4.ggpht.com/kJEnfqhPvtm4m3EneSZ4fWYGS8lW4YNhEjk6zPkyrQaBUHc-2Y_ElDic99NHI0h-UBLXVbRCjFybFvrWxdk=s100">
+            <a href="project-2048.html">Build Your Own 2048!</a>
+            <p>I made my own version of 2048. How cool is that!?</p>
+          </li>
+
+          <li>
+            <img src="https://lh6.ggpht.com/f_0W8h__3G99CWTjnMjD8BUKm7yp2-wJyApLtTwFoFtlal2ULf_JgHIsOQq2NiYfKOdMlXlMHDKNo5XVZLs=s100">
+            <a href="project-webperf.html">Website Performance Optimization</a>
+            <p>Hey... this class looks familiar.</p>
+          </li>
+
+          <li>
+            <img src="https://lh5.ggpht.com/IKdCmTWn8a2nMhlwMYzryvzRN5CUZAOBr4tDrEAbszV7TIFe9pRAInA4kkYcgTXwrifJsBEsq1agTueuu-g=s100">
+            <a href="project-mobile.html">Mobile Web Development</a>
+            <p>Making mobile apps isn't so hard after all.</p>
+          </li>
+
+          <li>
+            <img style="width: 100px;" src="views/images/pizzeria.jpg">
+            <a href="views/pizza.html">Cam's Pizzeria</a>
+            <p>Who wants a performant pizza?</p>
+          </li>
+        </ul>
+    </div>
+
+    <footer>
+      <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
+    </footer>
+  </body>
 </html>
